@@ -44,6 +44,7 @@ public class LinearEquationLogic {
         slope = Math.round(( double) (y2 - y1) / (x2 - x1) * 100) / 100.0;
         b = y1 - (slope * x1); //    b = y1 - ((double) (y2 - y1) / (x2 - x1) * x1);
         distance = Math.round(Math.sqrt(Math.pow(x1 - x2, 2) + Math.pow(y1 - y2, 2)) * 100) / 100.0;
+        lineInfo();
         y = slope * x + b;
     }
 
